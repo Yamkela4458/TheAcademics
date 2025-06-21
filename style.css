@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #fff;
+  padding: 20px;
+  transition: background-color 0.4s, color 0.4s;
+  background-image: url(images/IMG_8520.JPG);
+}
+ body{
+      opacity: 0;
+      transform: scale(0.8);
+      animation: popup 1s ease-out forwards;
+      color: #fff;
+      margin-top: 100px;
+    }
+
+    @keyframes popup {
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+header {
+  text-align: center;
+  background: gray;
+  color: #fff;
+  padding: 40px 20px;
+}
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  margin: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+.hero {
+  text-align: center;
+  margin: 40px auto;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.hero a{
+    color: #121212;
+}
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: gray;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+section {
+  margin: 40px auto;
+  max-width: 800px;
+}
+h2 {
+  margin-bottom: 15px;
+}
+
+#menu h2{
+  color: aqua;
+}
+.menu-items {
+  display: grid;
+  gap: 20px;
+}
+.item {
+  background: grey;
+  padding: 20px;
+  border-radius: 10px;
+}
+.item ul li a{
+  color: bisque;
+  text-decoration: none;
+}
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  background: gray;
+  color: #fff;
+}
+#toggle-dark {
+  margin-top: 10px;
+  background: #fff;
+  border: none;
+  color: #121212;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+body.dark-mode section,
+body.dark-mode .item {
+  background-color: #1e1e1e;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: black;
+}
+body.dark-mode a {
+  color: #ff6347;
+}
+#about h3{
+  color: aqua;
+}
+#about h2{
+  color: #fff;
+}
+
+#about h4{
+  color: #ff6347;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#contact h2{
+  color: #fff;
+}
+#contact h4{
+  font-family: 'Courier New', Courier, monospace;
+  color: #ff6347;
+}
