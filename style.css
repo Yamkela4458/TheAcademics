@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
   background-color: #fff;
@@ -10,21 +11,21 @@ body {
   padding: 20px;
   transition: background-color 0.4s, color 0.4s;
   background-image: url(images/IMG_8520.JPG);
-}
- body{
-      opacity: 0;
-      transform: scale(0.8);
-      animation: popup 1s ease-out forwards;
-      color: #fff;
-      margin-top: 100px;
-    }
+  background-size: cover;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: popup 1s ease-out forwards;
+  color: #fff;
+  margin-top: 100px;
+  }
 
-    @keyframes popup {
-      to {
-        opacity: 1;
-        transform: scale(1);
-      }
+  @keyframes popup {
+    to {
+    opacity: 1;
+    transform: scale(1);
     }
+  }
+ 
 header {
   text-align: center;
   background: gray;
@@ -32,12 +33,15 @@ header {
   padding: 40px 20px;
 }
 
-/* Glowing animated headline */
 header h1 {
   font-size: 2.5rem;
-  color: #fff;
-  text-shadow: 0 0 5px #fff, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+  color: #594c41;
+  text-shadow: 0 0 5px #fff, 0 0 20px #be7544, 0 0 30px #d48300;
   animation: glow 2s ease-in-out infinite alternate;
+}
+
+header p{
+  color: #5b3903;
 }
 
 nav {
@@ -46,7 +50,7 @@ nav {
 
 nav a {
   margin: 0 12px;
-  color: #fff;
+  color: #f9cbe5;
   text-decoration: none;
   font-weight: bold;
 }
@@ -59,10 +63,16 @@ nav a:hover {
 }
 .hero h2 {
   font-size: 2rem;
+  color: #deeb66;
   margin-bottom: 10px;
 }
+
+.hero p{
+  color: #ff6347;
+}
+
 .hero a{
-    color: #121212;
+    color: #fad6d6;
 }
 .btn {
   display: inline-block;
@@ -81,12 +91,10 @@ h2 {
   margin-bottom: 15px;
 }
 
-/* Floating animation for menu section */
 #menu {
   animation: floatUpDown 6s ease-in-out infinite;
 }
 
-/* Keyframes for smooth up-and-down movement */
 @keyframes floatUpDown {
   0% {
     transform: translateY(0px);
@@ -100,7 +108,7 @@ h2 {
 }
 
 #menu h2{
-  color: aqua;
+  color: #deeb66;
 }
 .menu-items {
   display: grid;
@@ -132,23 +140,6 @@ footer {
   border-radius: 4px;
 }
 
-/* Dark mode */
-body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-body.dark-mode section,
-body.dark-mode .item {
-  background-color: #1e1e1e;
-}
-body.dark-mode header,
-body.dark-mode footer {
-  background: black;
-}
-body.dark-mode a {
-  color: #ff6347;
-}
-
 .floating-graduate {
   position: fixed;
   font-size: 3rem;
@@ -160,7 +151,6 @@ body.dark-mode a {
   z-index: 10;
 }
 
-/* Animation: float across the screen */
 @keyframes graduateFloat {
   0% {
     transform: translateX(0) rotate(0deg);
@@ -176,24 +166,21 @@ body.dark-mode a {
   }
 }
 
-#about h3{
-  color: aqua;
-}
 #about h2{
-  color: #fff;
+  color: #deeb66;
 }
 
-#about h4{
-  color: #ff6347;
-  font-family: 'Courier New', Courier, monospace;
+#about h3{
+  color: burlywood;
+  text-align: justify;
 }
 
 #contact h2{
-  color: #fff;
+  color: #deeb66;
 }
 #contact h4{
   font-family: 'Courier New', Courier, monospace;
-  color: #ff6347;
+  color: burlywood;
 }
 
 .floating-emoji {
@@ -205,7 +192,6 @@ body.dark-mode a {
   pointer-events: none;
 }
 
-/* Emoji animation */
 @keyframes floatEmojis {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -218,7 +204,6 @@ body.dark-mode a {
   }
 }
 
-/* Unique positions and delays */
 footer {
   position: relative;
   overflow: hidden;
