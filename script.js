@@ -6,6 +6,10 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
+const fuzzy = document.querySelector(".fuzzy-text");
+fuzzy.setAttribute("data-text", fuzzy.textContent);
+
+
 // Scroll Button
 const scrollBtn = document.createElement('button');
 scrollBtn.innerText = '⬆️ Top';
@@ -57,4 +61,9 @@ document.querySelectorAll('nav a').forEach(link => {
     const target = document.querySelector(link.getAttribute('href'));
     target.scrollIntoView({ behavior: 'smooth' });
   });
+});
+
+const lines = document.querySelectorAll(".about-line, .contact-line");
+lines.forEach((el, i) => {
+  el.style.animationDelay = `${0.4 + i * 0.3}s`;
 });
