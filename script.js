@@ -12,7 +12,7 @@ fuzzy.setAttribute("data-text", fuzzy.textContent);
 
 // Scroll Button
 const scrollBtn = document.createElement('button');
-scrollBtn.innerText = '⬆️ Top';
+scrollBtn.innerText = '⬆ Top';
 scrollBtn.id = 'scrollToTop';
 scrollBtn.style.cssText = `
   position: fixed;
@@ -67,3 +67,4 @@ const lines = document.querySelectorAll(".about-line, .contact-line");
 lines.forEach((el, i) => {
   el.style.animationDelay = `${0.4 + i * 0.3}s`;
 });
+
