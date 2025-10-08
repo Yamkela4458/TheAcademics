@@ -6,12 +6,10 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: black;
   color: #fff;
   padding: 20px;
   transition: background-color 0.4s, color 0.4s;
-  background-image: url(images/IMG_8520.JPG);
-  background-size: cover;
   opacity: 0;
   transform: scale(0.8);
   animation: popup 1s ease-out forwards;
@@ -87,7 +85,7 @@ nav {
 
 nav a {
   margin: 0 12px;
-  color: #f9cbe5;
+  color: #deeb66;
   text-decoration: none;
   font-weight: bold;
 }
@@ -137,19 +135,17 @@ nav a:hover {
   to{opacity:1; transform:translateY(0);}
 }
 .hero h2{
-  font-size:40px;
+  font-size:30px;
   font-weight:800;
   line-height:1.2;
-  background:linear-gradient(90deg,#60a5fa,#7dd3fc,#38bdf8);
-  background-clip:text;
-  color:transparent;
+  color: burlywood;
   letter-spacing:2px;
   text-transform:uppercase;
   animation:textGlow 4s ease-in-out infinite;
 }
 @keyframes textGlow{
-  0%,100%{filter:drop-shadow(0 0 8px #7dd3fc);}
-  50%{filter:drop-shadow(0 0 18px #60a5fa);}
+  0%,100%{filter:drop-shadow(0 0 8px #c3c4c5);}
+  50%{filter:drop-shadow(0 0 18px #8d8e8f);}
 }
 .hero p{
   font-size:18px;
@@ -165,20 +161,18 @@ nav a:hover {
 }
 .btn{
   display:inline-block;
-  background:linear-gradient(90deg,#2966e8,#38bdf8);
+  background:linear-gradient(90deg,#6a6a6b,#494b4b);
   color:#fff;
   text-decoration:none;
   font-weight:600;
   letter-spacing:1px;
   padding:14px 28px;
   border-radius:50px;
-  box-shadow:0 0 20px rgba(56,189,248,0.35);
   transition:all 0.4s ease;
   animation:floatBtn 3s ease-in-out infinite;
 }
 .btn:hover{
-  background:linear-gradient(90deg,#38bdf8,#7dd3fc);
-  box-shadow:0 0 30px rgba(125,211,252,0.55);
+  background:linear-gradient(90deg,#783306,#615a5b);
   transform:translateY(-4px) scale(1.04);
 }
 @keyframes floatBtn{
@@ -332,7 +326,7 @@ h2 {
   padding:80px 8%;
   position:relative;
   overflow:hidden;
-  background:radial-gradient(circle at top left, #0f1724, #0a1020 60%);
+  background:radial-gradient(circle at top left, #b1b1b3, #464647 60%);
   font-family:Inter, system-ui, sans-serif;
   color:#e6eef8;
 }
@@ -343,7 +337,7 @@ h2 {
   left:-50%;
   width:200%;
   height:200%;
-  background:conic-gradient(from 180deg, #7dd3fc, #60a5fa, #2563eb, #7dd3fc);
+  background:conic-gradient(from 180deg, #a9abac, #9c9d9e, #767778, #4d4f4f);
   animation:rotateGlow 12s linear infinite;
   filter:blur(120px);
   opacity:0.3;
@@ -361,20 +355,19 @@ h2 {
   box-shadow:0 8px 32px rgba(0,0,0,0.6);
 }
 .glow-title{
-  font-size:38px;
+  font-size:30px;
   text-align:center;
   text-transform:uppercase;
   letter-spacing:3px;
   margin-bottom:24px;
   position:relative;
-  background:linear-gradient(90deg,#60a5fa,#7dd3fc,#38bdf8);
+  background:linear-gradient(90deg,#d4d5d6,#984d07,#f94d03);
   -webkit-background-clip:text;
   color:transparent;
   animation:glowFlow 4s ease-in-out infinite;
 }
 @keyframes glowFlow{
-  0%,100%{filter:drop-shadow(0 0 4px #7dd3fc) drop-shadow(0 0 12px #38bdf8);}
-  50%{filter:drop-shadow(0 0 18px #60a5fa) drop-shadow(0 0 28px #2563eb);}
+  0%,100%{filter:drop-shadow(0 0 4px #807f7f) drop-shadow(0 0 12px #8a8887);}
 }
 .about-line{
   font-weight:500;
